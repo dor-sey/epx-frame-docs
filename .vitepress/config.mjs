@@ -2,6 +2,7 @@
 
 export default defineConfig({
   title: 'epx-Frame',
+  base: '/epx-frame-docs/',
   description: '基于 Vue 的企业级低代码开发框架',
   themeConfig: {
     logo: '/logo.svg',
