@@ -4,7 +4,7 @@
   "description": "epx-frame 开发指南",
   "scripts": {
     "dev": "vitepress dev",
-    "build": "vitepress build",
+    "docs:build": "vitepress build",
     "preview": "vitepress preview"
   },
   "devDependencies": {
