@@ -1,0 +1,35 @@
+---
+layout: home
+
+hero:
+  name: epx-frame
+  text: 低代码平台开发指南
+  tagline: 基于 Vue 的企业级低代码开发框架，快速构建业务应用
+  actions:
+    - theme: brand
+      text: 快速上手
+      link: /guide/getting-started/
+    - theme: alt
+      text: 组件文档
+      link: /guide/component/
+
+features:
+  - icon: ⚡
+    title: 快速开发
+    details: 通过页面模板和组件配置，无需编写大量代码即可快速生成业务页面，大幅提升开发效率。
+  - icon: 🧩
+    title: 丰富组件
+    details: 内置对象列表、新增编辑表单等业务组件，同时支持 Element 和 Vant 第三方组件库。
+  - icon: 🔧
+    title: 灵活扩展
+    details: 支持组件继承、混入机制和自定义组件开发，满足各种复杂业务场景的定制需求。
+  - icon: 🎨
+    title: 主题换肤
+    details: 内置 SASS Mixin 主题色方案，轻松实现品牌定制和多主题切换功能。
+  - icon: 📱
+    title: 多端适配
+    details: 自动识别移动端和 PC 端，提供响应式布局，一套代码适配多种设备。
+  - icon: 🚀
+    title: 便捷部署
+    details: 支持插件注册和独立打包两种部署方式，灵活集成到易普云平台或独立运行。
+---

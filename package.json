@@ -1,0 +1,13 @@
+{
+  "name": "epx-frame-docs",
+  "version": "1.0.0",
+  "description": "epx-frame 开发指南",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.3"
+  }
+}
