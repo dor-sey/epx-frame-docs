@@ -7,11 +7,11 @@
 使用 Vue 的 `extends` 选项来继承组件：
 
 ```js
-import ListVue from '@/frame/packages/entity-list'
+import { EntityList } from 'epx-frame'
 
 export default {
   name: 'epx-list-find',
-  extends: ListVue,
+  extends: EntityList,
   // 可以在这里重写或新增属性和方法
 }
 ```
@@ -27,11 +27,11 @@ export default {
 继承后可以重写父组件的方法来实现自定义逻辑：
 
 ```js
-import ListVue from '@/frame/packages/entity-list'
+import { EntityList } from 'epx-frame'
 
 export default {
   name: 'epx-list-find',
-  extends: ListVue,
+  extends: EntityList,
   methods: {
     // 重写父组件的渲染方法
     renderComponent() {
@@ -55,11 +55,11 @@ export default {
 对象查找列表组件就是通过继承对象列表组件来实现的：
 
 ```js
-import ListVue from '@/frame/packages/entity-list'
+import { EntityList } from 'epx-frame'
 
 export default {
   name: 'epx-entity-list-find',
-  extends: ListVue,
+  extends: EntityList,
   // 重写了部分变量和方法，使其适用于查找选择场景
 }
 ```
@@ -69,15 +69,15 @@ export default {
 对象子列表组件同样继承自对象列表组件，但针对子列表场景进行了适配：
 
 ```js
-import ListVue from '@/frame/packages/entity-list'
+import { EntityList } from 'epx-frame'
 
 export default {
   name: 'epx-entity-sub-list',
-  extends: ListVue,
+  extends: EntityList,
   // 针对子列表场景的定制
 }
 ```
 
 ::: warning 注意
-重写方法时要注意保留父组件的核心逻辑。如果需要调用父组件的原始方法，可以通过 `ListVue.options.methods.methodName.call(this)` 的方式调用。
+重写方法时要注意保留父组件的核心逻辑。如果需要调用父组件的原始方法，可以通过 `EntityList.options.methods.methodName.call(this)` 的方式调用。
 :::

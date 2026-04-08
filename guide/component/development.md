@@ -77,11 +77,11 @@ export default {
 除了从头开发组件外，还可以通过继承已有组件来快速创建新组件。继承后可以获得父组件的所有属性、变量和方法，并可以对方法进行重写：
 
 ```js
-import ListVue from '@/frame/packages/entity-list'
+import { EntityList } from 'epx-frame'
 
 export default {
   name: 'epx-list-find',
-  extends: ListVue,
+  extends: EntityList,
   // 重写或新增属性和方法
 }
 ```

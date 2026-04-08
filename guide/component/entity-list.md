@@ -165,15 +165,15 @@ items: [
 ### 通过继承自定义
 
 ```js
-import ListVue from '@/frame/packages/entity-list'
+import { EntityList } from 'epx-frame'
 
 export default {
   name: 'epx-my-list',
-  extends: ListVue,
+  extends: EntityList,
   methods: {
     // 重写渲染操作列
     renderColumnOperates () {
-      const base = ListVue.options.methods.renderColumnOperates.call(this)
+      const base = EntityList.options.methods.renderColumnOperates.call(this)
       // 在原有基础上扩展 scopedSlots
       return {
         ...base,

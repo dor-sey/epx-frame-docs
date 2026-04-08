@@ -135,11 +135,11 @@
 ### 通过继承自定义
 
 ```js
-import AddFormVue from '@/frame/packages/add-form'
+import { AddForm } from 'epx-frame'
 
 export default {
   name: 'epx-my-form',
-  extends: AddFormVue,
+  extends: AddForm,
   methods: {
     // 提交前自定义校验
     async beforeSubmit () {
@@ -151,7 +151,7 @@ export default {
     },
     // 重写目录头部渲染
     renderBase () {
-      const base = AddFormVue.options.methods.renderBase.call(this)
+      const base = AddForm.options.methods.renderBase.call(this)
       return base
     }
   }

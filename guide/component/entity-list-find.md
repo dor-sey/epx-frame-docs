@@ -99,15 +99,15 @@ epx-entity-list
 ### 通过继承自定义
 
 ```js
-import ListFindVue from '@/frame/packages/entity-list-find'
+import { EntityListFind } from 'epx-frame'
 
 export default {
   name: 'epx-my-list-find',
-  extends: ListFindVue,
+  extends: EntityListFind,
   methods: {
     // 选择后追加自定义逻辑
     selectEntity (config, item) {
-      ListFindVue.options.methods.selectEntity.call(this, config, item)
+      EntityListFind.options.methods.selectEntity.call(this, config, item)
       // 额外处理
       console.log('selected:', item)
     },

@@ -90,20 +90,20 @@
 ### 通过继承自定义菜单加载逻辑
 
 ```js
-import MenuIndexVue from '@/frame/packages/menu-index'
+import { MenuIndex } from 'epx-frame'
 
 export default {
   name: 'epx-my-menu-index',
-  extends: MenuIndexVue,
+  extends: MenuIndex,
   methods: {
     // 自定义菜单数据处理
     getMenu (moduleId) {
-      MenuIndexVue.options.methods.getMenu.call(this, moduleId)
+      MenuIndex.options.methods.getMenu.call(this, moduleId)
       // 加载完成后追加自定义菜单项
     },
     // 自定义菜单显示过滤
     getShowMenuData (menu) {
-      MenuIndexVue.options.methods.getShowMenuData.call(this, menu)
+      MenuIndex.options.methods.getShowMenuData.call(this, menu)
       // 额外过滤逻辑
     }
   }
